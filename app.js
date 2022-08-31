@@ -9,9 +9,10 @@ let hasBlackJack = false;
 let message = "";
 let playerDetails = {
     name: 'Paulina',
-    points: 0
+    chips: 100
 }
 
+player.textContent = `Hi ${playerDetails.name}, you have ${playerDetails.chips} chips. Let's start the game!`
 
 function getRandomCard() {
     let randomCard = Math.floor(Math.random() * 13) + 1
@@ -34,7 +35,6 @@ function startGame() {
 }
 
 function renderGame() {
-    player.textContent = `Hi ${playerDetails.name}`
     if (sum === 21) {
         message = "BLACKJACK!!! You won!";
         hasBlackJack = true;
