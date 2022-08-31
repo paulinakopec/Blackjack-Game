@@ -1,0 +1,31 @@
+body {
+    background: url("https://t4.ftcdn.net/jpg/03/19/28/67/360_F_319286712_A1Ub7YD5EAtGhpxc9C0FaIPOPXKKU0rU.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    color: white;
+}
+
+#title, #game-output {
+    color: gold;
+}
+
+#title {
+    font-size: 80px;
+}
+
+.btn {
+    padding: 10px;
+    width: 120px;
+    margin: 10px 5px;
+}
+
+.btn:hover {
+    background-color: gold;
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+}
